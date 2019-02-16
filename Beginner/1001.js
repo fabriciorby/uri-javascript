@@ -1,7 +1,7 @@
 try {
     let input = require('fs').readFileSync('/dev/stdin', 'utf8');
     var lines = input.split('\n');
-} catch {
+} catch (err) {
     var lines = ['10', '9'];
 }
 
