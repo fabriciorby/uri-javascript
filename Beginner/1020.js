@@ -8,10 +8,10 @@ try {
 let totalDias = lines.shift();
 
 const totalAnos = parseInt(totalDias / 365);
-totalDias = totalDias - totalAnos * 365;
+totalDias = totalDias % 365;
 
 const totalMeses = parseInt(totalDias / 30);
-totalDias = totalDias - totalMeses * 30;
+totalDias = totalDias % 30;
 
 console.log(totalAnos + ' ano(s)');
 console.log(totalMeses + ' mes(es)');
