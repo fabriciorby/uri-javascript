@@ -1,5 +1,9 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+try {
+    let input = require('fs').readFileSync('/dev/stdin', 'utf8');
+    var lines = input.split('\n');
+} catch {
+    var lines = ['25', '100', '5.50'];
+}
 
 /**
  * Escreva a sua solução aqui
